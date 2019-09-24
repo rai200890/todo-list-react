@@ -5,7 +5,8 @@ services:
       context: .
     working_dir: /app
     environment:
-      - NODE_ENV=development
+      NODE_ENV: development
+      PORT: 8080
     volumes:
       - .:/app
     ports:
