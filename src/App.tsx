@@ -3,15 +3,17 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Container } from 'react-bootstrap';
 
-type Props = { name: string };
+import {TodoList} from "./TodoList.js"
 
 function Index() {
-  return <h2>TODOs List</h2>;
+  return <TodoList/>
 }
 
 function New() {
   return <h2>Add TODO</h2>;
 }
+
+type Props = { name: string };
 
 class NavBar extends React.PureComponent<Props> {
   render() {
